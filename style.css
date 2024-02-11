@@ -1,0 +1,105 @@
+:root{
+    /* Primary Color */
+    --green: hsl(75, 94%, 57%);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+    /* FONT */
+    --family: 'Inter', sans-serif;
+    --size: 14px;
+    --font-weight-normal: 400;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--family);
+    text-decoration: none;
+    color: var(--white);
+    line-height: 1.5;
+    /* letter-spacing: 0.5px; */
+}
+
+body{
+    height: 100svh;
+    background-color: var(--off-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        padding: 24px;
+        height: 579px;
+        width: 327px;
+        border-radius: 9px;
+        background-color: var(--dark-grey);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        img{
+            height: 89px;
+            border-radius: 50%;
+        }
+
+        h1{
+            font-size: 18px;
+        }
+
+        strong{
+            font-size: 12px;
+            color: var(--green);
+        }
+
+        p{
+            font-size: 11px;
+        }
+
+        .card-link-section{
+            height: 289px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            a{
+                height: 45px;
+                width: 279px;
+                border-radius: 6px;
+                background-color: var(--grey);
+                font-weight: var(--font-weight-semi-bold);
+                display: grid;
+                place-content: center;
+                transition: all .3s ease-out;
+                font-size: 11px;
+            }a:hover{
+                background-color: var(--green);
+                color: var(--grey);
+            }
+        }
+    }
+}
+
+@media (min-width: 399px) {
+    body{
+        .card{
+            padding: 40px;
+            height: 611px;
+            width: 385px;
+        
+            .card-link-section{
+                a{
+                    width: 304px;
+                }
+            }
+        }
+
+    }
+}

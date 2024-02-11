@@ -24,7 +24,6 @@
     text-decoration: none;
     color: var(--white);
     line-height: 1.5;
-    /* letter-spacing: 0.5px; */
 }
 
 body{
@@ -33,73 +32,69 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    .card{
-        padding: 24px;
-        height: 579px;
-        width: 327px;
-        border-radius: 9px;
-        background-color: var(--dark-grey);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
+}
 
-        img{
-            height: 89px;
-            border-radius: 50%;
-        }
+.card{
+    padding: 24px;
+    height: 579px;
+    width: 327px;
+    border-radius: 9px;
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
 
-        h1{
-            font-size: 18px;
-        }
-
-        strong{
-            font-size: 12px;
-            color: var(--green);
-        }
-
-        p{
-            font-size: 11px;
-        }
-
-        .card-link-section{
-            height: 289px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-
-            a{
-                height: 45px;
-                width: 279px;
-                border-radius: 6px;
-                background-color: var(--grey);
-                font-weight: var(--font-weight-semi-bold);
-                display: grid;
-                place-content: center;
-                transition: all .3s ease-out;
-                font-size: 11px;
-            }a:hover{
-                background-color: var(--green);
-                color: var(--grey);
-            }
-        }
+.card img{
+        height: 89px;
+        border-radius: 50%;
     }
+
+.card h1{
+        font-size: 18px;
+    }
+
+.card strong{
+        font-size: 12px;
+        color: var(--green);
+    }
+
+.card p{
+        font-size: 11px;
+    }
+
+.card-link-section{
+    height: 289px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card-link-section a{
+    height: 45px;
+    width: 279px;
+    border-radius: 6px;
+    background-color: var(--grey);
+    font-weight: var(--font-weight-semi-bold);
+    display: grid;
+    place-content: center;
+    transition: all .3s ease-out;
+    font-size: 11px;
+}
+.card-link-section a:hover{
+    background-color: var(--green);
+    color: var(--grey);
 }
 
 @media (min-width: 756px) {
-    body{
-        .card{
-            padding: 40px;
-            height: 611px;
-            width: 385px;
-        
-            .card-link-section{
-                a{
-                    width: 304px;
-                }
-            }
-        }
-
+    .card{
+        padding: 40px;
+        height: 611px;
+        width: 385px;
     }
+    
+.card-link-section a{
+    width: 304px;
+}
 }

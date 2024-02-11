@@ -87,7 +87,7 @@ body{
     }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 756px) {
     body{
         .card{
             padding: 40px;
